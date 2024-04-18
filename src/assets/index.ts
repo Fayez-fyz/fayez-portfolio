@@ -1,3 +1,4 @@
+"use client";
 export * as HTMLIcon from "./devicons/HTML-Icon.svg";
 export * as CSSIcon from "./devicons/CSS-Icon.svg";
 export * as JavaScriptIcon from "./devicons/JavaScript-Icon.svg";
