@@ -55,9 +55,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ParticlesContainer />
           <main id="home">
-            <ParticlesContainer />
-
             <Navbar />
             <Toaster />
             {children}
