@@ -45,7 +45,10 @@ const ContactComponent = () => {
     }
   };
   return (
-    <div className="lg:h-[calc(100vh-4rem)] mt-20 relative" id="contact">
+    <div
+      className="lg:h-[calc(100vh-4rem)] 3  mt-20 mb-6  relative"
+      id="contact"
+    >
       <ContainerWrapper>
         <h1
           style={{

@@ -6,7 +6,7 @@ const Footer = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex justify-center dark:bg-zinc-950 bg-primary-foreground  p-4 mt-3 sm:m-0  shadow-lg ">
+    <div className="flex justify-center dark:bg-zinc-950 bg-primary-foreground  p-4 mt-6 sm:m-0  shadow-lg ">
       <h2
         style={{
           transform: isInView ? "none" : "translateX(200px)",

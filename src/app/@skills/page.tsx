@@ -3,12 +3,12 @@ import {
   CSSIcon,
   ExpoIcon,
   ExpressIcon,
-  // GitHubIcon,
+  GitHubIcon,
   GitIcon,
   HTMLIcon,
-  // JavaScriptIcon,
+  JavaScriptIcon,
   MaterialUIIcon,
-  // MongoDBIcon,
+  MongoDBIcon,
   NestIcon,
   NextIcon,
   NodeIcon,
@@ -16,7 +16,7 @@ import {
   ReactIcon,
   ReduxIcon,
   TailwindIcon,
-  // TypeScriptIcon,
+  TypeScriptIcon,
 } from "@/assets";
 import ContainerWrapper from "@/common/ContainerWrapper";
 import { useInView } from "framer-motion";
@@ -51,14 +51,14 @@ const SkillsComponent = () => {
               <CSSIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">CSS</p>
             </div>
-{/*             <div className="flex flex-col items-center gap-3 mx-4">
+            <div className="flex flex-col items-center gap-3 mx-4">
               <JavaScriptIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">JavaScript</p>
-            </div> */}
-{/*             <div className="flex flex-col items-center gap-3 mx-4">
+            </div>
+            <div className="flex flex-col items-center gap-3 mx-4">
               <TypeScriptIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">TypeScript</p>
-            </div> */}
+            </div>
             <div className="flex flex-col items-center gap-3 mx-4">
               <ReactIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">React.js</p>
@@ -95,10 +95,10 @@ const SkillsComponent = () => {
               <PostgresqlIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">PostgreSQL</p>
             </div>
-{/*             <div className="flex flex-col items-center gap-3 mx-4">
+            <div className="flex flex-col items-center gap-3 mx-4">
               <MongoDBIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">MongoDB</p>
-            </div> */}
+            </div>
             <div className="flex flex-col items-center gap-3 mx-4">
               <TailwindIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">Tailwind</p>
@@ -107,10 +107,10 @@ const SkillsComponent = () => {
               <MaterialUIIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">Material UI</p>
             </div>
-{/*             <div className="flex flex-col items-center gap-3 mx-4">
+            <div className="flex flex-col items-center gap-3 mx-4">
               <GitHubIcon className="text-5xl md:text-8xl dark:fill-white fill-zinc-900" />
               <p className="text-center font-bold   ">GitHub</p>
-            </div> */}
+            </div>
             <div className="flex flex-col items-center gap-3 mx-4">
               <GitIcon className="text-5xl md:text-8xl" />
               <p className="text-center font-bold  ">Git</p>

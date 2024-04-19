@@ -1,4 +1,3 @@
-import FooterComponent from "@/common/Footer";
 import Navbar from "@/common/Navbar";
 import ParticlesContainer from "@/common/ParticlesContainer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -43,16 +42,16 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className="zinc scroll-smooth no-scrollbar">
+    <html lang="en" className="zinc  no-scrollbar">
       <body
         className={cn(
-          "min-h-screen font-sans antialiased bg-zinc-200 dark:bg-primary-foreground",
+          "min-h-screen font-sans antialiased bg-zinc-200 dark:bg-primary-foreground overflow-x-hidden",
           montserrat.className
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
@@ -62,7 +61,6 @@ export default function RootLayout({
             <Navbar />
             <Toaster />
             {children}
-            <FooterComponent />
           </main>
         </ThemeProvider>
       </body>
