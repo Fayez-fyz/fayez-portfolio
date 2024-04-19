@@ -1,23 +1,17 @@
 "use client";
-import {
-  type Container,
-  type ISourceOptions
-} from "@tsparticles/engine";
+import { useTheme } from "next-themes";
+import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
-// import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-import {
-  particlesConfigDark,
-  particlesConfigLight,
-} from "@/configs/particles.config";
-import { useTheme } from "next-themes";
+import { particlesConfig } from "@/configs/particles.config";
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+// import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const ParticlesContainer = () => {
+  const { theme } = useTheme();
   const [init, setInit] = useState(false);
-  const { setTheme, theme } = useTheme();
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -31,14 +25,14 @@ const ParticlesContainer = () => {
     }).then(() => {
       setInit(true);
     });
-  }, [theme]);
+  }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
   };
 
   const options: ISourceOptions = useMemo(
-    () => (theme === "dark" ? particlesConfigDark : particlesConfigLight),
+    () => particlesConfig(theme),
     [theme]
   );
 
@@ -48,12 +42,11 @@ const ParticlesContainer = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        
       />
     );
   }
 
-  return null;
+  return <></>;
 };
 
 export default ParticlesContainer;
