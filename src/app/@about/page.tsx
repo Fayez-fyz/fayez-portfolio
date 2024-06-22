@@ -66,10 +66,10 @@ const AboutComponent = () => {
                 >
                   Hyring.com
                 </Link>{" "}
-                , Ryzone mobile apps, and Riceportal mobile apps. Additionally,
-                I&apos;ve taken the lead on various mini projects such as Social
-                App, Blog App, and Simple Job Portal App, where I&apos;ve honed
-                my skills across diverse domains.
+                , Ryzone mobile apps, and KK Riceportal mobile apps.
+                Additionally, I&apos;ve taken the lead on various mini projects
+                such as Social App, Blog App, Simple Job Portal App and more,
+                where I&apos;ve honed my skills across diverse domains.
               </p>
               <p className="text-primary text-xs  mt-2 ">
                 My expertise spans both frontend and backend development, with

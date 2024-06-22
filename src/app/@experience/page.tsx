@@ -77,6 +77,11 @@ const ExperienceComponent = () => {
                   solutions to meet business requirements.{" "}
                 </li>
                 <li>
+                  Developed and integrated AI features into web applications
+                  using OpenAI and AssemblyAI to enhance functionality and user
+                  experience.
+                </li>
+                <li>
                   Utilized RESTful APIs to integrate various third-party
                   services and data sources, enhancing the functionality and
                   usability of our applications.
