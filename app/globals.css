@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-ink font-body antialiased;
+    background-image:
+      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(99, 102, 241, 0.16), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 20%, rgba(34, 211, 238, 0.08), transparent);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-accent-cyan/30 text-white;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.cyan');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050816;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1f2a44;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c3a5e;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .glass-panel {
+    @apply relative rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-xl;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.28em] text-accent-cyan uppercase;
+  }
+
+  .grid-backdrop {
+    background-image: theme('backgroundImage.grid-pattern');
+    background-size: theme('backgroundSize.grid');
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 40%, transparent 85%);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 40%, transparent 85%);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-blue to-accent-indigo px-6 py-3 text-sm font-medium text-white shadow-glow transition-transform duration-300 hover:scale-[1.03] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-ink backdrop-blur-md transition-colors duration-300 hover:border-accent-cyan/50 hover:text-accent-cyan;
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-[11px] text-ink-muted;
+  }
+}
