@@ -9,8 +9,8 @@ import type {
 
 export const personal = {
   name: 'Fayez',
-  title: 'Full Stack AI Engineer',
-  shortTitle: 'Full Stack AI Engineer',
+  title: 'Senior Software Engineer | Full Stack & AI Engineer',
+  shortTitle: 'Senior Software Engineer | Full Stack & AI Engineer',
   location: 'Tamil Nadu, India',
   email: 'zeyaffayez007@gmail.com',
   phone: '+91-8098838503',
@@ -19,9 +19,9 @@ export const personal = {
   portfolio: 'https://fayez.vercel.app',
   // Paste your Google Drive share link here (set sharing to "Anyone with the link can view").
   resumeUrl: 'https://drive.google.com/file/d/1tyZako07EDcrXEZ9bFYSZKjqweC1f3NY/view?usp=drive_link',
-  yearsExperience: '5',
+  yearsExperience: '4+',
   summary:
-    'Full Stack Developer with 5 years of experience building scalable web, mobile, and AI-driven applications. Proficient in React.js, Next.js, Node.js, Python, FastAPI, and TypeScript, with hands-on expertise in LangChain, LangGraph, Retrieval-Augmented Generation (RAG), and multi-LLM integration for production-grade agentic AI systems. Skilled in building RESTful APIs, SaaS products, cross-platform mobile apps, and secure authentication systems. Experienced with Docker, GitHub Actions CI/CD, Azure Container Apps, and AWS EC2.',
+    'Full Stack Developer with 4+ years of experience building scalable web, mobile, and AI-driven applications. Proficient in React.js, Next.js, Node.js, Python, FastAPI, and TypeScript, with hands-on expertise in LangChain, LangGraph, Retrieval-Augmented Generation (RAG), and multi-LLM integration for production-grade agentic AI systems. Skilled in building RESTful APIs, SaaS products, cross-platform mobile apps, and secure authentication systems. Experienced with Docker, GitHub Actions CI/CD, Azure Container Apps, and AWS EC2.',
   focusAreas: [
     'Agentic AI Systems',
     'RAG Pipelines',
@@ -33,7 +33,7 @@ export const personal = {
 export const aboutHighlights = [
   {
     label: 'Experience',
-    value: '5 yrs',
+    value: '4+ yrs',
     detail: 'Shipping production web, mobile, and AI systems',
   },
   {
